@@ -1,0 +1,115 @@
+:root{
+    --color-white: white;
+    --color-red: red;
+    --color-dark1: #181818;
+    --color-green: #32CD32;
+    --color-purple1: #9333FF;
+    --color-purple2: indigo;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    background-color: var(--color-dark1);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    background-color: var(--color-green);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 10%;
+    height: 68%;
+    min-width: 20%;
+    overflow: auto;
+}
+
+
+h1{
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+p{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--color-dark1);
+    font-weight: bold;
+
+}
+input{
+    padding: 15px ;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.span-required{
+    display: none;
+
+}
+
+.inputs{
+    padding: 10px 10px;  
+    outline: none;
+    border-radius: 10px; 
+    background-color: var(--color-white);
+    border: 2px solid var(--color-dark1);
+    color: var(--color-dark1); 
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+}
+.inputs:focus{
+    border-color: var(--color-purple1);
+}
+/*Sexo*/
+ul{
+    list-style-type: none;
+}
+.box-select{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;  
+}
+
+
+
+/*Botão de cadastrar */
+.btn{
+    background-color: var(--color-purple2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    transition: 0.8s;
+    font-family: georgia;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--color-purple1);
+}
